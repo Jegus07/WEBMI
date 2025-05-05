@@ -9,4 +9,5 @@ def inscription(request):
             return render(request, 'webinar/success.html')
     else:
         form = InscriptionForm()
+        #exemple
     return render(request, 'webinar/inscription.html', {'form': form})
