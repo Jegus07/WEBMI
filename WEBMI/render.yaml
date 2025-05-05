@@ -8,7 +8,7 @@ services:
      -key: DJANGO_SETTING_MODULE
      value: WEBMI.settings
      key: SECRET_KEY
-     value:'django-insecure-w^o+z0!wres71vyl9b=4-&s^wacdrhnwjg+5f#f*7+pjbc^0@g'
+     value: "django-insecure-w^o+z0!wres71vyl9b=4-&s^wacdrhnwjg+5f#f*7+pjbc^0@g"
      key: ALLOWED_HOSTS
      value: '.onrender.com'
 
