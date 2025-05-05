@@ -3,6 +3,7 @@ services:
   name: WEBMI
   env: python
   buildCommand: pip install -r requirements.txt
+                python manage.py collectstatic --noinput
   startCommand: gunicorn WEBMI.wsgi:application
   envVars:
     - key: DJANGO_SETTINGS_MODULE
@@ -11,4 +12,7 @@ services:
       value: "django-insecure-w^o+z0!wres71vyl9b=4-&s^wacdrhnwjg+5f#f*7+pjbc^0@g"
     - key: ALLOWED_HOSTS
       value: webmi.onrender.com
+    - key: STATIC_ROOT
+    - value: /opt/render/project/src/staticfiles
+
 
