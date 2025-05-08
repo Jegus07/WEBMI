@@ -25,5 +25,7 @@ urlpatterns = [
     path('inscription/', include('webinar.urls')),
     path('', lambda request: redirect('/inscription/')),
     path('login/', auth_views.LoginView.as_view(template_name='webinar/login.html'), name='login'),
+    path('', include('Web.urls')),  # Inclure les URLs de l'application "webi"
+    path('marketing/', include('marketing.urls')),
 ]
 

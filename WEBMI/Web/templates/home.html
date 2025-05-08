@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Accueil - WEBMI{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <h1 id="welcome-message">Bienvenue sur WEBMI</h1>
+    <p>Explorez les opportunités du digital pour les jeunes professionnels, étudiants et parents.</p>
+
+    <div class="hero-section">
+        <img src="{% static 'web/images/banniere.jpg' %}" alt="WEBMI Banniere" class="hero-image">
+        <a href="{% url 'login' %}" class="login-btn">Se connecter</a>
+    </div>
+</div>
+{% endblock %}
