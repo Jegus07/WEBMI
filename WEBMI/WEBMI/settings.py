@@ -80,10 +80,15 @@ WSGI_APPLICATION = 'WEBMI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'web_db_vbok',
+        'USER': 'alex',
+        'PASSWORD': 'gGopSapKJAPLgon68VujE42pkovoEJWI',
+        'HOST': 'dpg-d0eddm15pdvs73b0suh0-a',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
