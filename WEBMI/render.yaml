@@ -1,5 +1,5 @@
 services:
-- type: web
+- type: webi
   name: WEBMI
   env: python
   buildCommand: pip install -r requirements.txt
