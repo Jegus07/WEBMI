@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'web_db_vbok',
         'USER': 'alex',
         'PASSWORD': 'gGopSapKJAPLgon68VujE42pkovoEJWI',
-        'HOST': 'dpg-d0eddm15pdvs73b0suh0-a',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
